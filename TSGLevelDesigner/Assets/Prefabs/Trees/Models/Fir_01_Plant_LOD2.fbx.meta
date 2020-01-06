@@ -1,0 +1,1027 @@
+fileFormatVersion: 2
+guid: ada905972c9a83848a22aec11cf4d828
+ModelImporter:
+  serializedVersion: 26
+  internalIDToNameTable:
+  - first:
+      1: 100000
+    second: //RootNode
+  - first:
+      1: 100002
+    second: Fir_01_Plant_LOD2
+  - first:
+      1: 100004
+    second: Fir_02_Small_LOD4
+  - first:
+      1: 100006
+    second: Fir_03_Medium_LOD4
+  - first:
+      1: 100008
+    second: Fir_04_Standalone_LOD4
+  - first:
+      1: 100010
+    second: Fir_05_Standalone_LOD4
+  - first:
+      1: 100012
+    second: Fir_06_Forest_LOD4
+  - first:
+      1: 100014
+    second: Fir_07_Forest_LOD4
+  - first:
+      1: 100016
+    second: Fir_08_Dead_Forest_LOD4
+  - first:
+      1: 100018
+    second: plant
+  - first:
+      4: 400000
+    second: //RootNode
+  - first:
+      4: 400002
+    second: Fir_01_Plant_LOD2
+  - first:
+      4: 400004
+    second: Fir_02_Small_LOD4
+  - first:
+      4: 400006
+    second: Fir_03_Medium_LOD4
+  - first:
+      4: 400008
+    second: Fir_04_Standalone_LOD4
+  - first:
+      4: 400010
+    second: Fir_05_Standalone_LOD4
+  - first:
+      4: 400012
+    second: Fir_06_Forest_LOD4
+  - first:
+      4: 400014
+    second: Fir_07_Forest_LOD4
+  - first:
+      4: 400016
+    second: Fir_08_Dead_Forest_LOD4
+  - first:
+      4: 400018
+    second: plant
+  - first:
+      23: 2300000
+    second: Fir_01_Plant_LOD2
+  - first:
+      23: 2300002
+    second: Fir_02_Small_LOD4
+  - first:
+      23: 2300004
+    second: Fir_03_Medium_LOD4
+  - first:
+      23: 2300006
+    second: Fir_04_Standalone_LOD4
+  - first:
+      23: 2300008
+    second: Fir_05_Standalone_LOD4
+  - first:
+      23: 2300010
+    second: Fir_06_Forest_LOD4
+  - first:
+      23: 2300012
+    second: Fir_07_Forest_LOD4
+  - first:
+      23: 2300014
+    second: Fir_08_Dead_Forest_LOD4
+  - first:
+      23: 2300016
+    second: plant
+  - first:
+      23: 2300018
+    second: //RootNode
+  - first:
+      33: 3300000
+    second: Fir_01_Plant_LOD2
+  - first:
+      33: 3300002
+    second: Fir_02_Small_LOD4
+  - first:
+      33: 3300004
+    second: Fir_03_Medium_LOD4
+  - first:
+      33: 3300006
+    second: Fir_04_Standalone_LOD4
+  - first:
+      33: 3300008
+    second: Fir_05_Standalone_LOD4
+  - first:
+      33: 3300010
+    second: Fir_06_Forest_LOD4
+  - first:
+      33: 3300012
+    second: Fir_07_Forest_LOD4
+  - first:
+      33: 3300014
+    second: Fir_08_Dead_Forest_LOD4
+  - first:
+      33: 3300016
+    second: plant
+  - first:
+      33: 3300018
+    second: //RootNode
+  - first:
+      43: 4300000
+    second: Fir_05_Standalone_LOD4
+  - first:
+      43: 4300002
+    second: Fir_02_Small_LOD4
+  - first:
+      43: 4300004
+    second: Fir_03_Medium_LOD4
+  - first:
+      43: 4300006
+    second: Fir_04_Standalone_LOD4
+  - first:
+      43: 4300008
+    second: Fir_01_Plant_LOD2
+  - first:
+      43: 4300010
+    second: Fir_08_Dead_Forest_LOD4
+  - first:
+      43: 4300012
+    second: Fir_06_Forest_LOD4
+  - first:
+      43: 4300014
+    second: Fir_07_Forest_LOD4
+  - first:
+      43: 4300016
+    second: plant
+  - first:
+      74: 7400000
+    second: Fir_05_Standalone_LOD4|Fir_01_Plant_LOD0|Take 001|BaseLayer
+  - first:
+      74: 7400002
+    second: Fir_05_Standalone_LOD4|Fir_01_Plant_LOD1|Take 001|BaseLayer
+  - first:
+      74: 7400004
+    second: Fir_05_Standalone_LOD4|Fir_02_Small_LOD0|Take 001|BaseLayer
+  - first:
+      74: 7400006
+    second: Fir_05_Standalone_LOD4|Fir_02_Small_LOD1|Take 001|BaseLayer
+  - first:
+      74: 7400008
+    second: Fir_05_Standalone_LOD4|Fir_02_Small_LOD2|Take 001|BaseLayer
+  - first:
+      74: 7400010
+    second: Fir_05_Standalone_LOD4|Fir_02_Small_LOD3|Take 001|BaseLayer
+  - first:
+      74: 7400012
+    second: Fir_05_Standalone_LOD4|Fir_02_Small_LOD4|Take 001|BaseLayer
+  - first:
+      74: 7400014
+    second: Fir_05_Standalone_LOD4|Fir_03_Medium_LOD0|Take 001|BaseLayer
+  - first:
+      74: 7400016
+    second: Fir_05_Standalone_LOD4|Fir_03_Medium_LOD1|Take 001|BaseLayer
+  - first:
+      74: 7400018
+    second: Fir_05_Standalone_LOD4|Fir_03_Medium_LOD2|Take 001|BaseLayer
+  - first:
+      74: 7400020
+    second: Fir_05_Standalone_LOD4|Fir_03_Medium_LOD3|Take 001|BaseLayer
+  - first:
+      74: 7400022
+    second: Fir_05_Standalone_LOD4|Fir_03_Medium_LOD4|Take 001|BaseLayer
+  - first:
+      74: 7400024
+    second: Fir_05_Standalone_LOD4|Fir_04_Standalone_LOD0|Take 001|BaseLayer
+  - first:
+      74: 7400026
+    second: Fir_05_Standalone_LOD4|Fir_04_Standalone_LOD1|Take 001|BaseLayer
+  - first:
+      74: 7400028
+    second: Fir_05_Standalone_LOD4|Fir_04_Standalone_LOD2|Take 001|BaseLayer
+  - first:
+      74: 7400030
+    second: Fir_05_Standalone_LOD4|Fir_04_Standalone_LOD3|Take 001|BaseLayer
+  - first:
+      74: 7400032
+    second: Fir_05_Standalone_LOD4|Fir_04_Standalone_LOD4|Take 001|BaseLayer
+  - first:
+      74: 7400034
+    second: Fir_05_Standalone_LOD4|Fir_05_Standalone_LOD0|Take 001|BaseLayer
+  - first:
+      74: 7400036
+    second: Fir_05_Standalone_LOD4|Fir_05_Standalone_LOD1|Take 001|BaseLayer
+  - first:
+      74: 7400038
+    second: Fir_05_Standalone_LOD4|Fir_05_Standalone_LOD2|Take 001|BaseLayer
+  - first:
+      74: 7400040
+    second: Fir_05_Standalone_LOD4|Fir_05_Standalone_LOD3|Take 001|BaseLayer
+  - first:
+      74: 7400042
+    second: Fir_05_Standalone_LOD4|Fir_05_Standalone_LOD4|Take 001|BaseLayer
+  - first:
+      74: 7400044
+    second: Fir_05_Standalone_LOD4|Fir_06_Forest_LOD0|Take 001|BaseLayer
+  - first:
+      74: 7400046
+    second: Fir_05_Standalone_LOD4|Fir_06_Forest_LOD1|Take 001|BaseLayer
+  - first:
+      74: 7400048
+    second: Fir_05_Standalone_LOD4|Fir_06_Forest_LOD2|Take 001|BaseLayer
+  - first:
+      74: 7400050
+    second: Fir_05_Standalone_LOD4|Fir_06_Forest_LOD3|Take 001|BaseLayer
+  - first:
+      74: 7400052
+    second: Fir_05_Standalone_LOD4|Fir_06_Forest_LOD4|Take 001|BaseLayer
+  - first:
+      74: 7400054
+    second: Fir_05_Standalone_LOD4|Fir_07_Forest_LOD0|Take 001|BaseLayer
+  - first:
+      74: 7400056
+    second: Fir_05_Standalone_LOD4|Fir_07_Forest_LOD1|Take 001|BaseLayer
+  - first:
+      74: 7400058
+    second: Fir_05_Standalone_LOD4|Fir_07_Forest_LOD2|Take 001|BaseLayer
+  - first:
+      74: 7400060
+    second: Fir_05_Standalone_LOD4|Fir_07_Forest_LOD3|Take 001|BaseLayer
+  - first:
+      74: 7400062
+    second: Fir_05_Standalone_LOD4|Fir_07_Forest_LOD4|Take 001|BaseLayer
+  - first:
+      74: 7400064
+    second: Fir_05_Standalone_LOD4|Fir_08_Dead_Forest_LOD0|Take 001|BaseLayer
+  - first:
+      74: 7400066
+    second: Fir_05_Standalone_LOD4|Fir_08_Dead_Forest_LOD1|Take 001|BaseLayer
+  - first:
+      74: 7400068
+    second: Fir_05_Standalone_LOD4|Fir_08_Dead_Forest_LOD2|Take 001|BaseLayer
+  - first:
+      74: 7400070
+    second: Fir_05_Standalone_LOD4|Fir_08_Dead_Forest_LOD3|Take 001|BaseLayer
+  - first:
+      74: 7400072
+    second: Fir_05_Standalone_LOD4|Fir_08_Dead_Forest_LOD4|Take 001|BaseLayer
+  - first:
+      74: 7400074
+    second: Fir_02_Small_LOD4|Fir_01_Plant_LOD0|Take 001|BaseLayer
+  - first:
+      74: 7400076
+    second: Fir_02_Small_LOD4|Fir_01_Plant_LOD1|Take 001|BaseLayer
+  - first:
+      74: 7400078
+    second: Fir_02_Small_LOD4|Fir_02_Small_LOD0|Take 001|BaseLayer
+  - first:
+      74: 7400080
+    second: Fir_02_Small_LOD4|Fir_02_Small_LOD1|Take 001|BaseLayer
+  - first:
+      74: 7400082
+    second: Fir_02_Small_LOD4|Fir_02_Small_LOD2|Take 001|BaseLayer
+  - first:
+      74: 7400084
+    second: Fir_02_Small_LOD4|Fir_02_Small_LOD3|Take 001|BaseLayer
+  - first:
+      74: 7400086
+    second: Fir_02_Small_LOD4|Fir_02_Small_LOD4|Take 001|BaseLayer
+  - first:
+      74: 7400088
+    second: Fir_02_Small_LOD4|Fir_03_Medium_LOD0|Take 001|BaseLayer
+  - first:
+      74: 7400090
+    second: Fir_02_Small_LOD4|Fir_03_Medium_LOD1|Take 001|BaseLayer
+  - first:
+      74: 7400092
+    second: Fir_02_Small_LOD4|Fir_03_Medium_LOD2|Take 001|BaseLayer
+  - first:
+      74: 7400094
+    second: Fir_02_Small_LOD4|Fir_03_Medium_LOD3|Take 001|BaseLayer
+  - first:
+      74: 7400096
+    second: Fir_02_Small_LOD4|Fir_03_Medium_LOD4|Take 001|BaseLayer
+  - first:
+      74: 7400098
+    second: Fir_02_Small_LOD4|Fir_04_Standalone_LOD0|Take 001|BaseLayer
+  - first:
+      74: 7400100
+    second: Fir_02_Small_LOD4|Fir_04_Standalone_LOD1|Take 001|BaseLayer
+  - first:
+      74: 7400102
+    second: Fir_02_Small_LOD4|Fir_04_Standalone_LOD2|Take 001|BaseLayer
+  - first:
+      74: 7400104
+    second: Fir_02_Small_LOD4|Fir_04_Standalone_LOD3|Take 001|BaseLayer
+  - first:
+      74: 7400106
+    second: Fir_02_Small_LOD4|Fir_04_Standalone_LOD4|Take 001|BaseLayer
+  - first:
+      74: 7400108
+    second: Fir_02_Small_LOD4|Fir_05_Standalone_LOD0|Take 001|BaseLayer
+  - first:
+      74: 7400110
+    second: Fir_02_Small_LOD4|Fir_05_Standalone_LOD1|Take 001|BaseLayer
+  - first:
+      74: 7400112
+    second: Fir_02_Small_LOD4|Fir_05_Standalone_LOD2|Take 001|BaseLayer
+  - first:
+      74: 7400114
+    second: Fir_02_Small_LOD4|Fir_05_Standalone_LOD3|Take 001|BaseLayer
+  - first:
+      74: 7400116
+    second: Fir_02_Small_LOD4|Fir_05_Standalone_LOD4|Take 001|BaseLayer
+  - first:
+      74: 7400118
+    second: Fir_02_Small_LOD4|Fir_06_Forest_LOD0|Take 001|BaseLayer
+  - first:
+      74: 7400120
+    second: Fir_02_Small_LOD4|Fir_06_Forest_LOD1|Take 001|BaseLayer
+  - first:
+      74: 7400122
+    second: Fir_02_Small_LOD4|Fir_06_Forest_LOD2|Take 001|BaseLayer
+  - first:
+      74: 7400124
+    second: Fir_02_Small_LOD4|Fir_06_Forest_LOD3|Take 001|BaseLayer
+  - first:
+      74: 7400126
+    second: Fir_02_Small_LOD4|Fir_06_Forest_LOD4|Take 001|BaseLayer
+  - first:
+      74: 7400128
+    second: Fir_02_Small_LOD4|Fir_07_Forest_LOD0|Take 001|BaseLayer
+  - first:
+      74: 7400130
+    second: Fir_02_Small_LOD4|Fir_07_Forest_LOD1|Take 001|BaseLayer
+  - first:
+      74: 7400132
+    second: Fir_02_Small_LOD4|Fir_07_Forest_LOD2|Take 001|BaseLayer
+  - first:
+      74: 7400134
+    second: Fir_02_Small_LOD4|Fir_07_Forest_LOD3|Take 001|BaseLayer
+  - first:
+      74: 7400136
+    second: Fir_02_Small_LOD4|Fir_07_Forest_LOD4|Take 001|BaseLayer
+  - first:
+      74: 7400138
+    second: Fir_02_Small_LOD4|Fir_08_Dead_Forest_LOD0|Take 001|BaseLayer
+  - first:
+      74: 7400140
+    second: Fir_02_Small_LOD4|Fir_08_Dead_Forest_LOD1|Take 001|BaseLayer
+  - first:
+      74: 7400142
+    second: Fir_02_Small_LOD4|Fir_08_Dead_Forest_LOD2|Take 001|BaseLayer
+  - first:
+      74: 7400144
+    second: Fir_02_Small_LOD4|Fir_08_Dead_Forest_LOD3|Take 001|BaseLayer
+  - first:
+      74: 7400146
+    second: Fir_02_Small_LOD4|Fir_08_Dead_Forest_LOD4|Take 001|BaseLayer
+  - first:
+      74: 7400148
+    second: Fir_03_Medium_LOD4|Fir_01_Plant_LOD0|Take 001|BaseLayer
+  - first:
+      74: 7400150
+    second: Fir_03_Medium_LOD4|Fir_01_Plant_LOD1|Take 001|BaseLayer
+  - first:
+      74: 7400152
+    second: Fir_03_Medium_LOD4|Fir_02_Small_LOD0|Take 001|BaseLayer
+  - first:
+      74: 7400154
+    second: Fir_03_Medium_LOD4|Fir_02_Small_LOD1|Take 001|BaseLayer
+  - first:
+      74: 7400156
+    second: Fir_03_Medium_LOD4|Fir_02_Small_LOD2|Take 001|BaseLayer
+  - first:
+      74: 7400158
+    second: Fir_03_Medium_LOD4|Fir_02_Small_LOD3|Take 001|BaseLayer
+  - first:
+      74: 7400160
+    second: Fir_03_Medium_LOD4|Fir_02_Small_LOD4|Take 001|BaseLayer
+  - first:
+      74: 7400162
+    second: Fir_03_Medium_LOD4|Fir_03_Medium_LOD0|Take 001|BaseLayer
+  - first:
+      74: 7400164
+    second: Fir_03_Medium_LOD4|Fir_03_Medium_LOD1|Take 001|BaseLayer
+  - first:
+      74: 7400166
+    second: Fir_03_Medium_LOD4|Fir_03_Medium_LOD2|Take 001|BaseLayer
+  - first:
+      74: 7400168
+    second: Fir_03_Medium_LOD4|Fir_03_Medium_LOD3|Take 001|BaseLayer
+  - first:
+      74: 7400170
+    second: Fir_03_Medium_LOD4|Fir_03_Medium_LOD4|Take 001|BaseLayer
+  - first:
+      74: 7400172
+    second: Fir_03_Medium_LOD4|Fir_04_Standalone_LOD0|Take 001|BaseLayer
+  - first:
+      74: 7400174
+    second: Fir_03_Medium_LOD4|Fir_04_Standalone_LOD1|Take 001|BaseLayer
+  - first:
+      74: 7400176
+    second: Fir_03_Medium_LOD4|Fir_04_Standalone_LOD2|Take 001|BaseLayer
+  - first:
+      74: 7400178
+    second: Fir_03_Medium_LOD4|Fir_04_Standalone_LOD3|Take 001|BaseLayer
+  - first:
+      74: 7400180
+    second: Fir_03_Medium_LOD4|Fir_04_Standalone_LOD4|Take 001|BaseLayer
+  - first:
+      74: 7400182
+    second: Fir_03_Medium_LOD4|Fir_05_Standalone_LOD0|Take 001|BaseLayer
+  - first:
+      74: 7400184
+    second: Fir_03_Medium_LOD4|Fir_05_Standalone_LOD1|Take 001|BaseLayer
+  - first:
+      74: 7400186
+    second: Fir_03_Medium_LOD4|Fir_05_Standalone_LOD2|Take 001|BaseLayer
+  - first:
+      74: 7400188
+    second: Fir_03_Medium_LOD4|Fir_05_Standalone_LOD3|Take 001|BaseLayer
+  - first:
+      74: 7400190
+    second: Fir_03_Medium_LOD4|Fir_05_Standalone_LOD4|Take 001|BaseLayer
+  - first:
+      74: 7400192
+    second: Fir_03_Medium_LOD4|Fir_06_Forest_LOD0|Take 001|BaseLayer
+  - first:
+      74: 7400194
+    second: Fir_03_Medium_LOD4|Fir_06_Forest_LOD1|Take 001|BaseLayer
+  - first:
+      74: 7400196
+    second: Fir_03_Medium_LOD4|Fir_06_Forest_LOD2|Take 001|BaseLayer
+  - first:
+      74: 7400198
+    second: Fir_03_Medium_LOD4|Fir_06_Forest_LOD3|Take 001|BaseLayer
+  - first:
+      74: 7400200
+    second: Fir_03_Medium_LOD4|Fir_06_Forest_LOD4|Take 001|BaseLayer
+  - first:
+      74: 7400202
+    second: Fir_03_Medium_LOD4|Fir_07_Forest_LOD0|Take 001|BaseLayer
+  - first:
+      74: 7400204
+    second: Fir_03_Medium_LOD4|Fir_07_Forest_LOD1|Take 001|BaseLayer
+  - first:
+      74: 7400206
+    second: Fir_03_Medium_LOD4|Fir_07_Forest_LOD2|Take 001|BaseLayer
+  - first:
+      74: 7400208
+    second: Fir_03_Medium_LOD4|Fir_07_Forest_LOD3|Take 001|BaseLayer
+  - first:
+      74: 7400210
+    second: Fir_03_Medium_LOD4|Fir_07_Forest_LOD4|Take 001|BaseLayer
+  - first:
+      74: 7400212
+    second: Fir_03_Medium_LOD4|Fir_08_Dead_Forest_LOD0|Take 001|BaseLayer
+  - first:
+      74: 7400214
+    second: Fir_03_Medium_LOD4|Fir_08_Dead_Forest_LOD1|Take 001|BaseLayer
+  - first:
+      74: 7400216
+    second: Fir_03_Medium_LOD4|Fir_08_Dead_Forest_LOD2|Take 001|BaseLayer
+  - first:
+      74: 7400218
+    second: Fir_03_Medium_LOD4|Fir_08_Dead_Forest_LOD3|Take 001|BaseLayer
+  - first:
+      74: 7400220
+    second: Fir_03_Medium_LOD4|Fir_08_Dead_Forest_LOD4|Take 001|BaseLayer
+  - first:
+      74: 7400222
+    second: Fir_04_Standalone_LOD4|Fir_01_Plant_LOD0|Take 001|BaseLayer
+  - first:
+      74: 7400224
+    second: Fir_04_Standalone_LOD4|Fir_01_Plant_LOD1|Take 001|BaseLayer
+  - first:
+      74: 7400226
+    second: Fir_04_Standalone_LOD4|Fir_02_Small_LOD0|Take 001|BaseLayer
+  - first:
+      74: 7400228
+    second: Fir_04_Standalone_LOD4|Fir_02_Small_LOD1|Take 001|BaseLayer
+  - first:
+      74: 7400230
+    second: Fir_04_Standalone_LOD4|Fir_02_Small_LOD2|Take 001|BaseLayer
+  - first:
+      74: 7400232
+    second: Fir_04_Standalone_LOD4|Fir_02_Small_LOD3|Take 001|BaseLayer
+  - first:
+      74: 7400234
+    second: Fir_04_Standalone_LOD4|Fir_02_Small_LOD4|Take 001|BaseLayer
+  - first:
+      74: 7400236
+    second: Fir_04_Standalone_LOD4|Fir_03_Medium_LOD0|Take 001|BaseLayer
+  - first:
+      74: 7400238
+    second: Fir_04_Standalone_LOD4|Fir_03_Medium_LOD1|Take 001|BaseLayer
+  - first:
+      74: 7400240
+    second: Fir_04_Standalone_LOD4|Fir_03_Medium_LOD2|Take 001|BaseLayer
+  - first:
+      74: 7400242
+    second: Fir_04_Standalone_LOD4|Fir_03_Medium_LOD3|Take 001|BaseLayer
+  - first:
+      74: 7400244
+    second: Fir_04_Standalone_LOD4|Fir_03_Medium_LOD4|Take 001|BaseLayer
+  - first:
+      74: 7400246
+    second: Fir_04_Standalone_LOD4|Fir_04_Standalone_LOD0|Take 001|BaseLayer
+  - first:
+      74: 7400248
+    second: Fir_04_Standalone_LOD4|Fir_04_Standalone_LOD1|Take 001|BaseLayer
+  - first:
+      74: 7400250
+    second: Fir_04_Standalone_LOD4|Fir_04_Standalone_LOD2|Take 001|BaseLayer
+  - first:
+      74: 7400252
+    second: Fir_04_Standalone_LOD4|Fir_04_Standalone_LOD3|Take 001|BaseLayer
+  - first:
+      74: 7400254
+    second: Fir_04_Standalone_LOD4|Fir_04_Standalone_LOD4|Take 001|BaseLayer
+  - first:
+      74: 7400256
+    second: Fir_04_Standalone_LOD4|Fir_05_Standalone_LOD0|Take 001|BaseLayer
+  - first:
+      74: 7400258
+    second: Fir_04_Standalone_LOD4|Fir_05_Standalone_LOD1|Take 001|BaseLayer
+  - first:
+      74: 7400260
+    second: Fir_04_Standalone_LOD4|Fir_05_Standalone_LOD2|Take 001|BaseLayer
+  - first:
+      74: 7400262
+    second: Fir_04_Standalone_LOD4|Fir_05_Standalone_LOD3|Take 001|BaseLayer
+  - first:
+      74: 7400264
+    second: Fir_04_Standalone_LOD4|Fir_05_Standalone_LOD4|Take 001|BaseLayer
+  - first:
+      74: 7400266
+    second: Fir_04_Standalone_LOD4|Fir_06_Forest_LOD0|Take 001|BaseLayer
+  - first:
+      74: 7400268
+    second: Fir_04_Standalone_LOD4|Fir_06_Forest_LOD1|Take 001|BaseLayer
+  - first:
+      74: 7400270
+    second: Fir_04_Standalone_LOD4|Fir_06_Forest_LOD2|Take 001|BaseLayer
+  - first:
+      74: 7400272
+    second: Fir_04_Standalone_LOD4|Fir_06_Forest_LOD3|Take 001|BaseLayer
+  - first:
+      74: 7400274
+    second: Fir_04_Standalone_LOD4|Fir_06_Forest_LOD4|Take 001|BaseLayer
+  - first:
+      74: 7400276
+    second: Fir_04_Standalone_LOD4|Fir_07_Forest_LOD0|Take 001|BaseLayer
+  - first:
+      74: 7400278
+    second: Fir_04_Standalone_LOD4|Fir_07_Forest_LOD1|Take 001|BaseLayer
+  - first:
+      74: 7400280
+    second: Fir_04_Standalone_LOD4|Fir_07_Forest_LOD2|Take 001|BaseLayer
+  - first:
+      74: 7400282
+    second: Fir_04_Standalone_LOD4|Fir_07_Forest_LOD3|Take 001|BaseLayer
+  - first:
+      74: 7400284
+    second: Fir_04_Standalone_LOD4|Fir_07_Forest_LOD4|Take 001|BaseLayer
+  - first:
+      74: 7400286
+    second: Fir_04_Standalone_LOD4|Fir_08_Dead_Forest_LOD0|Take 001|BaseLayer
+  - first:
+      74: 7400288
+    second: Fir_04_Standalone_LOD4|Fir_08_Dead_Forest_LOD1|Take 001|BaseLayer
+  - first:
+      74: 7400290
+    second: Fir_04_Standalone_LOD4|Fir_08_Dead_Forest_LOD2|Take 001|BaseLayer
+  - first:
+      74: 7400292
+    second: Fir_04_Standalone_LOD4|Fir_08_Dead_Forest_LOD3|Take 001|BaseLayer
+  - first:
+      74: 7400294
+    second: Fir_04_Standalone_LOD4|Fir_08_Dead_Forest_LOD4|Take 001|BaseLayer
+  - first:
+      74: 7400296
+    second: Fir_08_Dead_Forest_LOD4|Fir_01_Plant_LOD0|Take 001|BaseLayer
+  - first:
+      74: 7400298
+    second: Fir_08_Dead_Forest_LOD4|Fir_01_Plant_LOD1|Take 001|BaseLayer
+  - first:
+      74: 7400300
+    second: Fir_08_Dead_Forest_LOD4|Fir_02_Small_LOD0|Take 001|BaseLayer
+  - first:
+      74: 7400302
+    second: Fir_08_Dead_Forest_LOD4|Fir_02_Small_LOD1|Take 001|BaseLayer
+  - first:
+      74: 7400304
+    second: Fir_08_Dead_Forest_LOD4|Fir_02_Small_LOD2|Take 001|BaseLayer
+  - first:
+      74: 7400306
+    second: Fir_08_Dead_Forest_LOD4|Fir_02_Small_LOD3|Take 001|BaseLayer
+  - first:
+      74: 7400308
+    second: Fir_08_Dead_Forest_LOD4|Fir_02_Small_LOD4|Take 001|BaseLayer
+  - first:
+      74: 7400310
+    second: Fir_08_Dead_Forest_LOD4|Fir_03_Medium_LOD0|Take 001|BaseLayer
+  - first:
+      74: 7400312
+    second: Fir_08_Dead_Forest_LOD4|Fir_03_Medium_LOD1|Take 001|BaseLayer
+  - first:
+      74: 7400314
+    second: Fir_08_Dead_Forest_LOD4|Fir_03_Medium_LOD2|Take 001|BaseLayer
+  - first:
+      74: 7400316
+    second: Fir_08_Dead_Forest_LOD4|Fir_03_Medium_LOD3|Take 001|BaseLayer
+  - first:
+      74: 7400318
+    second: Fir_08_Dead_Forest_LOD4|Fir_03_Medium_LOD4|Take 001|BaseLayer
+  - first:
+      74: 7400320
+    second: Fir_08_Dead_Forest_LOD4|Fir_04_Standalone_LOD0|Take 001|BaseLayer
+  - first:
+      74: 7400322
+    second: Fir_08_Dead_Forest_LOD4|Fir_04_Standalone_LOD1|Take 001|BaseLayer
+  - first:
+      74: 7400324
+    second: Fir_08_Dead_Forest_LOD4|Fir_04_Standalone_LOD2|Take 001|BaseLayer
+  - first:
+      74: 7400326
+    second: Fir_08_Dead_Forest_LOD4|Fir_04_Standalone_LOD3|Take 001|BaseLayer
+  - first:
+      74: 7400328
+    second: Fir_08_Dead_Forest_LOD4|Fir_04_Standalone_LOD4|Take 001|BaseLayer
+  - first:
+      74: 7400330
+    second: Fir_08_Dead_Forest_LOD4|Fir_05_Standalone_LOD0|Take 001|BaseLayer
+  - first:
+      74: 7400332
+    second: Fir_08_Dead_Forest_LOD4|Fir_05_Standalone_LOD1|Take 001|BaseLayer
+  - first:
+      74: 7400334
+    second: Fir_08_Dead_Forest_LOD4|Fir_05_Standalone_LOD2|Take 001|BaseLayer
+  - first:
+      74: 7400336
+    second: Fir_08_Dead_Forest_LOD4|Fir_05_Standalone_LOD3|Take 001|BaseLayer
+  - first:
+      74: 7400338
+    second: Fir_08_Dead_Forest_LOD4|Fir_05_Standalone_LOD4|Take 001|BaseLayer
+  - first:
+      74: 7400340
+    second: Fir_08_Dead_Forest_LOD4|Fir_06_Forest_LOD0|Take 001|BaseLayer
+  - first:
+      74: 7400342
+    second: Fir_08_Dead_Forest_LOD4|Fir_06_Forest_LOD1|Take 001|BaseLayer
+  - first:
+      74: 7400344
+    second: Fir_08_Dead_Forest_LOD4|Fir_06_Forest_LOD2|Take 001|BaseLayer
+  - first:
+      74: 7400346
+    second: Fir_08_Dead_Forest_LOD4|Fir_06_Forest_LOD3|Take 001|BaseLayer
+  - first:
+      74: 7400348
+    second: Fir_08_Dead_Forest_LOD4|Fir_06_Forest_LOD4|Take 001|BaseLayer
+  - first:
+      74: 7400350
+    second: Fir_08_Dead_Forest_LOD4|Fir_07_Forest_LOD0|Take 001|BaseLayer
+  - first:
+      74: 7400352
+    second: Fir_08_Dead_Forest_LOD4|Fir_07_Forest_LOD1|Take 001|BaseLayer
+  - first:
+      74: 7400354
+    second: Fir_08_Dead_Forest_LOD4|Fir_07_Forest_LOD2|Take 001|BaseLayer
+  - first:
+      74: 7400356
+    second: Fir_08_Dead_Forest_LOD4|Fir_07_Forest_LOD3|Take 001|BaseLayer
+  - first:
+      74: 7400358
+    second: Fir_08_Dead_Forest_LOD4|Fir_07_Forest_LOD4|Take 001|BaseLayer
+  - first:
+      74: 7400360
+    second: Fir_08_Dead_Forest_LOD4|Fir_08_Dead_Forest_LOD0|Take 001|BaseLayer
+  - first:
+      74: 7400362
+    second: Fir_08_Dead_Forest_LOD4|Fir_08_Dead_Forest_LOD1|Take 001|BaseLayer
+  - first:
+      74: 7400364
+    second: Fir_08_Dead_Forest_LOD4|Fir_08_Dead_Forest_LOD2|Take 001|BaseLayer
+  - first:
+      74: 7400366
+    second: Fir_08_Dead_Forest_LOD4|Fir_08_Dead_Forest_LOD3|Take 001|BaseLayer
+  - first:
+      74: 7400368
+    second: Fir_08_Dead_Forest_LOD4|Fir_08_Dead_Forest_LOD4|Take 001|BaseLayer
+  - first:
+      74: 7400370
+    second: Fir_06_Forest_LOD4|Fir_01_Plant_LOD0|Take 001|BaseLayer
+  - first:
+      74: 7400372
+    second: Fir_06_Forest_LOD4|Fir_01_Plant_LOD1|Take 001|BaseLayer
+  - first:
+      74: 7400374
+    second: Fir_06_Forest_LOD4|Fir_02_Small_LOD0|Take 001|BaseLayer
+  - first:
+      74: 7400376
+    second: Fir_06_Forest_LOD4|Fir_02_Small_LOD1|Take 001|BaseLayer
+  - first:
+      74: 7400378
+    second: Fir_06_Forest_LOD4|Fir_02_Small_LOD2|Take 001|BaseLayer
+  - first:
+      74: 7400380
+    second: Fir_06_Forest_LOD4|Fir_02_Small_LOD3|Take 001|BaseLayer
+  - first:
+      74: 7400382
+    second: Fir_06_Forest_LOD4|Fir_02_Small_LOD4|Take 001|BaseLayer
+  - first:
+      74: 7400384
+    second: Fir_06_Forest_LOD4|Fir_03_Medium_LOD0|Take 001|BaseLayer
+  - first:
+      74: 7400386
+    second: Fir_06_Forest_LOD4|Fir_03_Medium_LOD1|Take 001|BaseLayer
+  - first:
+      74: 7400388
+    second: Fir_06_Forest_LOD4|Fir_03_Medium_LOD2|Take 001|BaseLayer
+  - first:
+      74: 7400390
+    second: Fir_06_Forest_LOD4|Fir_03_Medium_LOD3|Take 001|BaseLayer
+  - first:
+      74: 7400392
+    second: Fir_06_Forest_LOD4|Fir_03_Medium_LOD4|Take 001|BaseLayer
+  - first:
+      74: 7400394
+    second: Fir_06_Forest_LOD4|Fir_04_Standalone_LOD0|Take 001|BaseLayer
+  - first:
+      74: 7400396
+    second: Fir_06_Forest_LOD4|Fir_04_Standalone_LOD1|Take 001|BaseLayer
+  - first:
+      74: 7400398
+    second: Fir_06_Forest_LOD4|Fir_04_Standalone_LOD2|Take 001|BaseLayer
+  - first:
+      74: 7400400
+    second: Fir_06_Forest_LOD4|Fir_04_Standalone_LOD3|Take 001|BaseLayer
+  - first:
+      74: 7400402
+    second: Fir_06_Forest_LOD4|Fir_04_Standalone_LOD4|Take 001|BaseLayer
+  - first:
+      74: 7400404
+    second: Fir_06_Forest_LOD4|Fir_05_Standalone_LOD0|Take 001|BaseLayer
+  - first:
+      74: 7400406
+    second: Fir_06_Forest_LOD4|Fir_05_Standalone_LOD1|Take 001|BaseLayer
+  - first:
+      74: 7400408
+    second: Fir_06_Forest_LOD4|Fir_05_Standalone_LOD2|Take 001|BaseLayer
+  - first:
+      74: 7400410
+    second: Fir_06_Forest_LOD4|Fir_05_Standalone_LOD3|Take 001|BaseLayer
+  - first:
+      74: 7400412
+    second: Fir_06_Forest_LOD4|Fir_05_Standalone_LOD4|Take 001|BaseLayer
+  - first:
+      74: 7400414
+    second: Fir_06_Forest_LOD4|Fir_06_Forest_LOD0|Take 001|BaseLayer
+  - first:
+      74: 7400416
+    second: Fir_06_Forest_LOD4|Fir_06_Forest_LOD1|Take 001|BaseLayer
+  - first:
+      74: 7400418
+    second: Fir_06_Forest_LOD4|Fir_06_Forest_LOD2|Take 001|BaseLayer
+  - first:
+      74: 7400420
+    second: Fir_06_Forest_LOD4|Fir_06_Forest_LOD3|Take 001|BaseLayer
+  - first:
+      74: 7400422
+    second: Fir_06_Forest_LOD4|Fir_06_Forest_LOD4|Take 001|BaseLayer
+  - first:
+      74: 7400424
+    second: Fir_06_Forest_LOD4|Fir_07_Forest_LOD0|Take 001|BaseLayer
+  - first:
+      74: 7400426
+    second: Fir_06_Forest_LOD4|Fir_07_Forest_LOD1|Take 001|BaseLayer
+  - first:
+      74: 7400428
+    second: Fir_06_Forest_LOD4|Fir_07_Forest_LOD2|Take 001|BaseLayer
+  - first:
+      74: 7400430
+    second: Fir_06_Forest_LOD4|Fir_07_Forest_LOD3|Take 001|BaseLayer
+  - first:
+      74: 7400432
+    second: Fir_06_Forest_LOD4|Fir_07_Forest_LOD4|Take 001|BaseLayer
+  - first:
+      74: 7400434
+    second: Fir_06_Forest_LOD4|Fir_08_Dead_Forest_LOD0|Take 001|BaseLayer
+  - first:
+      74: 7400436
+    second: Fir_06_Forest_LOD4|Fir_08_Dead_Forest_LOD1|Take 001|BaseLayer
+  - first:
+      74: 7400438
+    second: Fir_06_Forest_LOD4|Fir_08_Dead_Forest_LOD2|Take 001|BaseLayer
+  - first:
+      74: 7400440
+    second: Fir_06_Forest_LOD4|Fir_08_Dead_Forest_LOD3|Take 001|BaseLayer
+  - first:
+      74: 7400442
+    second: Fir_06_Forest_LOD4|Fir_08_Dead_Forest_LOD4|Take 001|BaseLayer
+  - first:
+      74: 7400444
+    second: Fir_07_Forest_LOD4|Fir_01_Plant_LOD0|Take 001|BaseLayer
+  - first:
+      74: 7400446
+    second: Fir_07_Forest_LOD4|Fir_01_Plant_LOD1|Take 001|BaseLayer
+  - first:
+      74: 7400448
+    second: Fir_07_Forest_LOD4|Fir_02_Small_LOD0|Take 001|BaseLayer
+  - first:
+      74: 7400450
+    second: Fir_07_Forest_LOD4|Fir_02_Small_LOD1|Take 001|BaseLayer
+  - first:
+      74: 7400452
+    second: Fir_07_Forest_LOD4|Fir_02_Small_LOD2|Take 001|BaseLayer
+  - first:
+      74: 7400454
+    second: Fir_07_Forest_LOD4|Fir_02_Small_LOD3|Take 001|BaseLayer
+  - first:
+      74: 7400456
+    second: Fir_07_Forest_LOD4|Fir_02_Small_LOD4|Take 001|BaseLayer
+  - first:
+      74: 7400458
+    second: Fir_07_Forest_LOD4|Fir_03_Medium_LOD0|Take 001|BaseLayer
+  - first:
+      74: 7400460
+    second: Fir_07_Forest_LOD4|Fir_03_Medium_LOD1|Take 001|BaseLayer
+  - first:
+      74: 7400462
+    second: Fir_07_Forest_LOD4|Fir_03_Medium_LOD2|Take 001|BaseLayer
+  - first:
+      74: 7400464
+    second: Fir_07_Forest_LOD4|Fir_03_Medium_LOD3|Take 001|BaseLayer
+  - first:
+      74: 7400466
+    second: Fir_07_Forest_LOD4|Fir_03_Medium_LOD4|Take 001|BaseLayer
+  - first:
+      74: 7400468
+    second: Fir_07_Forest_LOD4|Fir_04_Standalone_LOD0|Take 001|BaseLayer
+  - first:
+      74: 7400470
+    second: Fir_07_Forest_LOD4|Fir_04_Standalone_LOD1|Take 001|BaseLayer
+  - first:
+      74: 7400472
+    second: Fir_07_Forest_LOD4|Fir_04_Standalone_LOD2|Take 001|BaseLayer
+  - first:
+      74: 7400474
+    second: Fir_07_Forest_LOD4|Fir_04_Standalone_LOD3|Take 001|BaseLayer
+  - first:
+      74: 7400476
+    second: Fir_07_Forest_LOD4|Fir_04_Standalone_LOD4|Take 001|BaseLayer
+  - first:
+      74: 7400478
+    second: Fir_07_Forest_LOD4|Fir_05_Standalone_LOD0|Take 001|BaseLayer
+  - first:
+      74: 7400480
+    second: Fir_07_Forest_LOD4|Fir_05_Standalone_LOD1|Take 001|BaseLayer
+  - first:
+      74: 7400482
+    second: Fir_07_Forest_LOD4|Fir_05_Standalone_LOD2|Take 001|BaseLayer
+  - first:
+      74: 7400484
+    second: Fir_07_Forest_LOD4|Fir_05_Standalone_LOD3|Take 001|BaseLayer
+  - first:
+      74: 7400486
+    second: Fir_07_Forest_LOD4|Fir_05_Standalone_LOD4|Take 001|BaseLayer
+  - first:
+      74: 7400488
+    second: Fir_07_Forest_LOD4|Fir_06_Forest_LOD0|Take 001|BaseLayer
+  - first:
+      74: 7400490
+    second: Fir_07_Forest_LOD4|Fir_06_Forest_LOD1|Take 001|BaseLayer
+  - first:
+      74: 7400492
+    second: Fir_07_Forest_LOD4|Fir_06_Forest_LOD2|Take 001|BaseLayer
+  - first:
+      74: 7400494
+    second: Fir_07_Forest_LOD4|Fir_06_Forest_LOD3|Take 001|BaseLayer
+  - first:
+      74: 7400496
+    second: Fir_07_Forest_LOD4|Fir_06_Forest_LOD4|Take 001|BaseLayer
+  - first:
+      74: 7400498
+    second: Fir_07_Forest_LOD4|Fir_07_Forest_LOD0|Take 001|BaseLayer
+  - first:
+      74: 7400500
+    second: Fir_07_Forest_LOD4|Fir_07_Forest_LOD1|Take 001|BaseLayer
+  - first:
+      74: 7400502
+    second: Fir_07_Forest_LOD4|Fir_07_Forest_LOD2|Take 001|BaseLayer
+  - first:
+      74: 7400504
+    second: Fir_07_Forest_LOD4|Fir_07_Forest_LOD3|Take 001|BaseLayer
+  - first:
+      74: 7400506
+    second: Fir_07_Forest_LOD4|Fir_07_Forest_LOD4|Take 001|BaseLayer
+  - first:
+      74: 7400508
+    second: Fir_07_Forest_LOD4|Fir_08_Dead_Forest_LOD0|Take 001|BaseLayer
+  - first:
+      74: 7400510
+    second: Fir_07_Forest_LOD4|Fir_08_Dead_Forest_LOD1|Take 001|BaseLayer
+  - first:
+      74: 7400512
+    second: Fir_07_Forest_LOD4|Fir_08_Dead_Forest_LOD2|Take 001|BaseLayer
+  - first:
+      74: 7400514
+    second: Fir_07_Forest_LOD4|Fir_08_Dead_Forest_LOD3|Take 001|BaseLayer
+  - first:
+      74: 7400516
+    second: Fir_07_Forest_LOD4|Fir_08_Dead_Forest_LOD4|Take 001|BaseLayer
+  - first:
+      95: 9500000
+    second: //RootNode
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_Imposter_Fir_01
+    second: {fileID: 2100000, guid: 37740e02ae33e694ea0b355870c0a33c, type: 2}
+  materials:
+    importMaterials: 1
+    materialName: 1
+    materialSearch: 2
+    materialLocation: 0
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
+    importVisibility: 0
+    importBlendShapes: 1
+    importCameras: 0
+    importLights: 0
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    meshOptimizationFlags: -1
+    indexFormat: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 0
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 1
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  referencedClips: []
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 3
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    globalScale: 0.01
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
