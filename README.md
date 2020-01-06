@@ -4,9 +4,7 @@ Instructions on how to create custom levels for The Snowboard Game
 Download and install Unity3D (It's free)
 https://store.unity.com/#plans-individual
 
-Download and open the editor project
-https://drive.google.com/file/d/1Ci90xY8zpOgODIgmt_8QvKpy_UA8kBvw/view?usp=sharing
-
+Download or clone this project to your computer and open it in Unity
 
 Open the scene Assets/Scene/Example
 Find the object CustomLevel and in the inspector change these fields
