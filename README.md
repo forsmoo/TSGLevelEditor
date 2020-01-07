@@ -82,3 +82,12 @@ Terrain layers
 Limitations
 - Can't change position of the terrain
 - Can't add layers to terrains.
+
+## Update
+To update from the first version
+1. Make a backup of the old project
+2. In the project view, make sure you name your scene something other than Example.
+3. Right click your scene and export it as a package. For dependencies only include your terrain and any custom prefabs you made
+4. Open the new level design project and import the package. Don't override anything, just tick everything that will be added.
+5. Now you should have the Example scene and your previous scene in the project. 
+6. To export correctly you need to make sure that the CustomLevel object is setup correctly. Easiest way is to replace the Spawns and CustomLevel from the new scene to your old scene, and setup path again.
