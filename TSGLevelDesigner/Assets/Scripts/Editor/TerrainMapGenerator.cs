@@ -100,31 +100,37 @@ namespace Lirp
 	
 	        int splatMapWidth = t.terrainData.alphamapWidth;
 	        float[,,] splatmapData = t.terrainData.GetAlphamaps(0, 0, splatMapWidth, splatMapWidth);
-	
-	        for (int j = 0; j < ter.GetSplatMap().height; j++)
-	        {
-	            for (int i = 0; i < ter.GetSplatMap().width; i++)
-	            {
-	                float tu = i / ((float)ter.GetSplatMap().width);
-	                float tv = j / ((float)ter.GetSplatMap().height);
-	
-	                Color splatC = Color.red;
-	
-	                if (splatmapData != null && t.terrainData.splatPrototypes.Length > 1)
-	                {
-	                    int sxi = Mathf.Clamp(Mathf.RoundToInt((float)splatMapWidth * tv), 0, splatMapWidth - 1);
-	                    int syi = Mathf.Clamp(Mathf.RoundToInt((float)splatMapWidth * tu), 0, splatMapWidth - 1);
-	                    splatC.r = splatmapData[sxi, syi, 3];
-	                    splatC.g = splatmapData[sxi, syi, 1];
-	                    splatC.b = splatmapData[sxi, syi, 2];
-	                    splatC.a = 1;
-	                }
-	                
-	                ter.GetSplatMap().SetPixel(i, j, splatC);
-	            }
-	        }
-	
-	        byte[] bytes = ter.GetSplatMap().EncodeToPNG();
+            var targetSplatmap = ter.GetSplatMap();
+            
+            Color [] colors = new Color[splatMapWidth * splatMapWidth];
+            if (splatmapData != null && t.terrainData.splatPrototypes.Length > 1)
+            {
+                for (int j = 0; j < targetSplatmap.height; j++)
+                {
+                    for (int i = 0; i < targetSplatmap.width; i++)
+                    {
+                        float tu = i / ((float)targetSplatmap.width);
+                        float tv = j / ((float)targetSplatmap.height);
+
+                        Color splatC = Color.red;
+
+                        int sxi = Mathf.Clamp(Mathf.RoundToInt((float)splatMapWidth * tv), 0, splatMapWidth - 1);
+                        int syi = Mathf.Clamp(Mathf.RoundToInt((float)splatMapWidth * tu), 0, splatMapWidth - 1);
+                        splatC.r = splatmapData[sxi, syi, 3];
+                        splatC.g = splatmapData[sxi, syi, 1];
+                        splatC.b = splatmapData[sxi, syi, 2];
+                        splatC.a = 1;
+
+                        colors[j * targetSplatmap.height + i] = splatC;
+                        //targetSplatmap.SetPixel(i, j, splatC);
+                        
+                    }
+                }
+            }
+
+            targetSplatmap.SetPixels(colors);
+
+            byte[] bytes = targetSplatmap.EncodeToPNG();
 	
 	        //string path = AssetDatabase.GetAssetOrScenePath(ter.GetSplatMap());
 	        Debug.Log("Writing to path" + path);

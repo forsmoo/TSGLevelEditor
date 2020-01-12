@@ -5811,7 +5811,7 @@ PrefabInstance:
     - target: {fileID: 4433210648598643962, guid: f09879d529af53f44ba8881e2ebb9757,
         type: 3}
       propertyPath: m_Name
-      value: StartPost
+      value: StartPostPrefab
       objectReference: {fileID: 0}
     - target: {fileID: 855319166950143721, guid: f09879d529af53f44ba8881e2ebb9757,
         type: 3}

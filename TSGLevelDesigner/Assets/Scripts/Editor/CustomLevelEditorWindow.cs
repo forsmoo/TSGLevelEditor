@@ -25,7 +25,7 @@ namespace Lirp
         static string lightmapFilename = "lightmap.png";
         static string definitionFilename = "definition.json";
 
-        [MenuItem("The Snowboard Game/Export all %E")]
+        [MenuItem("The Snowboard Game/Export all")]
         public static void ExportAll()
         {
             saver = GameObject.FindObjectOfType<CustomLevelSaver>();
@@ -35,7 +35,7 @@ namespace Lirp
                 _ExportAll();
         }
 
-        [MenuItem("The Snowboard Game/Export placeables %T")]
+        [MenuItem("The Snowboard Game/Export placeables")]
         public static void ExportPlaceables()
         {
             saver = GameObject.FindObjectOfType<CustomLevelSaver>();
@@ -247,6 +247,12 @@ namespace Lirp
         {
             if (!SetupSave())
                 return;
+
+            if(GameObject.FindObjectsOfType<Terrain>().Length > 1 )
+            {
+                Debug.LogError("More than 1 terrain in scene");
+                return;
+            }
 
             var terrain = GameObject.FindObjectOfType<Terrain>();
             var terrainExtention = terrain.gameObject.GetComponent<TerrainExtension>();
