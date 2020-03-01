@@ -225,6 +225,30 @@ namespace Lirp
                 levelDefinition.Trees.Add(newTree);
             }
 
+            var rails = GameObject.FindObjectsOfType<RailDefinition>();
+            levelDefinition.Rails = new List<LevelRail>();
+            foreach (var railDef in rails)
+            {
+                var rail = new LevelRail();
+
+                foreach(var capsule in railDef.GetComponentsInChildren<CapsuleCollider>() )
+                {
+                    var railPart = new RailComponent();
+
+                    railPart.length = capsule.height;
+                    railPart.radius = capsule.radius;
+                    railPart.Name = capsule.gameObject.name;
+                    railPart.Position = capsule.transform.position;
+                    railPart.Rotation = capsule.transform.rotation;
+                    railPart.LocalScale = GetScale(capsule.transform);
+                    railPart.length *= railPart.LocalScale.z;
+                    railPart.radius *= railPart.LocalScale.x;
+                    rail.railParts.Add(railPart);
+                }
+
+                levelDefinition.Rails.Add(rail);
+            }
+
             string json = JsonUtility.ToJson(levelDefinition);
             string filename = GetPath(definitionFilename);
             if (File.Exists(filename))
@@ -233,8 +257,17 @@ namespace Lirp
             File.WriteAllText(filename, json);
         }
 
-        
-
+        static Vector3 GetScale(Transform t)
+        {
+            if (t.parent == null)
+                return t.localScale;
+            else
+            {
+                var scale = GetScale(t.parent);
+                scale.Scale(t.localScale);
+                return scale;
+            }
+        }
 
         public static void ExportAssetBundles()
         {

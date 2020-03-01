@@ -469,18 +469,24 @@ namespace UnityGLTF
         static string GetNamePostfix(GameObject go)
         {
             var postFix = "_NONE";
-
+            
             if (go.GetComponent<SphereCollider>() != null)
             {
                 postFix = "_SCOL";
+                if (go.GetComponent<SphereCollider>().sharedMaterial != null)
+                    postFix += "_PMETAL";
             }
             if (go.GetComponent<BoxCollider>() != null)
             {
                 postFix = "_BCOL";
+                if (go.GetComponent<BoxCollider>().sharedMaterial != null)
+                    postFix += "_PMETAL";
             }
             if (go.GetComponent<MeshCollider>() != null)
             {
                 postFix = "_COL";
+                if (go.GetComponent<MeshCollider>().sharedMaterial != null)
+                    postFix += "_PMETAL";
             }
 
             postFix += "_"+go.layer;

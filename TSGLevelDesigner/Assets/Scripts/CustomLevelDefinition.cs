@@ -19,6 +19,7 @@ namespace Lirp
     {
         public string LevelName;
         public List<LevelPrefabInstance> Placeables;
+        public List<LevelRail> Rails;
         public List<Spawn> Spawns;
         public Vector3 LobbyPosition;
         public Quaternion LobbyOrientation;
@@ -58,5 +59,23 @@ namespace Lirp
         public Vector3 LocalScale;
         public Quaternion Rotation;
         public string PrefabID;
+    }
+
+
+    [System.Serializable()]
+    public class LevelRail
+    {
+        public List<RailComponent> railParts = new List<RailComponent>();
+    }
+
+    [System.Serializable()]
+    public class RailComponent
+    {
+        public string Name;
+        public Vector3 Position;
+        public Vector3 LocalScale;
+        public Quaternion Rotation;
+        public float radius;
+        public float length;
     }
 }
