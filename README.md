@@ -12,6 +12,7 @@ Output Directory: [Steam]/steamapps/common/thesnowboardgame/CustomLevels
 Level Name: [Level name]
 
 Design your level.(More instructions below)
+LCZ's awesome tutorial: https://www.youtube.com/watch?time_continue=2&v=YiHTZXl1FNM&feature=emb_title
 Video tutorial: https://www.youtube.com/watch?v=rJwxMCG8Cpo
 
 To create/save the level so it shows up in the game, you need to go to the menu item "The Snowboard Game/Export All"
