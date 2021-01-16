@@ -20,6 +20,7 @@ namespace Lirp
         public string LevelName;
         public List<LevelPrefabInstance> Placeables;
         public List<LevelRail> Rails;
+        public List<LevelEdge> Edges;
         public List<Spawn> Spawns;
         public Vector3 LobbyPosition;
         public Quaternion LobbyOrientation;
@@ -77,5 +78,26 @@ namespace Lirp
         public Quaternion Rotation;
         public float radius;
         public float length;
+    }
+
+
+    [System.Serializable()]
+    public class LevelEdge
+    {
+        public List<EdgeCompoennt> edgeParts;
+    }
+
+
+    [System.Serializable()]
+    public class EdgeCompoennt
+    {
+        public string Name;
+        public Vector3 P1;
+        public Vector3 P2;
+        public Vector3 F1;
+        public Vector3 N1;
+        public Vector3 F2;
+        public Vector3 N2;
+        public int Material;
     }
 }

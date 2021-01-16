@@ -23,35 +23,35 @@ namespace Lirp
 #if UNITY_EDITOR
         [SerializeField]
 #endif
-        Texture2D HeightMap;
+        Texture2D HeightMap = null;
         public Texture2D GetHeightMap() { return HeightMap; }
 #if UNITY_EDITOR
         [SerializeField]
 #endif
-        Texture2D NormalMap;
+        Texture2D NormalMap = null;
         public Texture2D GetNormalMap() { return NormalMap; }
 #if UNITY_EDITOR
         [SerializeField]
 #endif
-        Texture2D AOBounceMap;
+        Texture2D AOBounceMap = null;
         public Texture2D GetAOBounceMap() { return AOBounceMap; }
 
 #if UNITY_EDITOR
         [SerializeField]
 #endif
-        Texture2D ShiftMap;
+        Texture2D ShiftMap = null;
         public Texture2D GetShiftMap() { return ShiftMap; }
 
         public bool NormalsInTangent = false;
 #if UNITY_EDITOR
         [SerializeField]
 #endif
-        Texture2D CastShadows;
+        Texture2D CastShadows = null;
         public Texture2D GetCastShadows() { return CastShadows; }
 #if UNITY_EDITOR
         [SerializeField]
 #endif
-        Texture2D SplatMap;
+        Texture2D SplatMap = null;
         public Texture2D GetSplatMap() { return SplatMap; }
         public float TerrainBaseMapDistance = 3000;
         public float TreeDistance = 8000;
@@ -61,11 +61,11 @@ namespace Lirp
 #if UNITY_EDITOR
         [SerializeField]
 #endif
-        TerrainDeformSettings DeformSettings;
+        TerrainDeformSettings DeformSettings = null;
         public TerrainDeformSettings GetDeformSettings() { return DeformSettings; }
 
 
-        Hashtable htDependencies = null;
+        //Hashtable htDependencies = null;
         public List<Material> terrainMaterials;
         public GameObject TreeInstances;
         public bool FlipSplatMapY = false;
@@ -133,7 +133,7 @@ namespace Lirp
                     pos = t.transform.position;
                     pos.z += t.terrainData.size.x * (((float)x) / ((float)heightMapWidth - 1.0f));
                     pos.x += t.terrainData.size.z * (((float)y) / ((float)heightMapWidth - 1.0f));
-                    float heightAdd = 0;
+                    
                     var encodedHeight = tex.GetPixelBilinear(tz, tx);
                     float height = DecodeFloatRGBA(encodedHeight);
                     if (x == 0 || y == 0 || x == heightMapWidth - 1 || y == heightMapWidth - 1)
