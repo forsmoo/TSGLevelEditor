@@ -1,0 +1,5 @@
+Edges can be used to set a firm edge on the edge of a halfpipe or quarter pipe, to sovle some physics issues.
+Place the prefab where there's an edge, and the first transform should align with the top of the surface, and the other with the steep face. Then hit update on the edge definition, this will auto find the exact normals.
+Make sure, that the calculated normals match with the geometry.
+
+Tip: When you select a transform, you can hold down V and it will snap to vertices.
