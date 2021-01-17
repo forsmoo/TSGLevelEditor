@@ -251,34 +251,35 @@ namespace Lirp
                 var levelEdge = new LevelEdge();
                 levelEdge.edgeParts = new List<EdgeCompoennt>();
 
-                edge.UpdateDefinition();
-                
-                EdgeCompoennt edgeComponent = new EdgeCompoennt();
-                edgeComponent.P1 = edge.edge.Start;
-                edgeComponent.P2 = edge.edge.End;
-                edgeComponent.N1 = edge.edge.Normal1;
-                edgeComponent.N2 = edge.edge.Normal2;
-                edgeComponent.F1 = edge.edge.RimDir;
-                edgeComponent.F2 = edge.edge.RimDir;
-                edgeComponent.Material = (int)edge.MaterialType;
-                levelEdge.edgeParts.Add(edgeComponent);
-
-                /*for ( int i=1;i<edge.Nodes.Count;i++)
+                if( edge.UpdateEdge () )
                 {
-                    var start = edge.Nodes[i - 1];
-                    var end = edge.Nodes[i];
                     EdgeCompoennt edgeComponent = new EdgeCompoennt();
-                    edgeComponent.P1 = start.position;
-                    edgeComponent.P2 = end.position;
-                    edgeComponent.N1 = start.up;
-                    edgeComponent.N2 = end.up;
-                    edgeComponent.F1 = start.forward;
-                    edgeComponent.F2 = end.forward;
+                    edgeComponent.P1 = edge.edge.Start;
+                    edgeComponent.P2 = edge.edge.End;
+                    edgeComponent.N1 = edge.edge.Normal1;
+                    edgeComponent.N2 = edge.edge.Normal2;
+                    edgeComponent.F1 = edge.edge.RimDir;
+                    edgeComponent.F2 = edge.edge.RimDir;
                     edgeComponent.Material = (int)edge.MaterialType;
                     levelEdge.edgeParts.Add(edgeComponent);
-                }*/
 
-                levelDefinition.Edges.Add(levelEdge);
+                    /*for ( int i=1;i<edge.Nodes.Count;i++)
+                    {
+                        var start = edge.Nodes[i - 1];
+                        var end = edge.Nodes[i];
+                        EdgeCompoennt edgeComponent = new EdgeCompoennt();
+                        edgeComponent.P1 = start.position;
+                        edgeComponent.P2 = end.position;
+                        edgeComponent.N1 = start.up;
+                        edgeComponent.N2 = end.up;
+                        edgeComponent.F1 = start.forward;
+                        edgeComponent.F2 = end.forward;
+                        edgeComponent.Material = (int)edge.MaterialType;
+                        levelEdge.edgeParts.Add(edgeComponent);
+                    }*/
+
+                    levelDefinition.Edges.Add(levelEdge);
+                }
             }
 
             string json = JsonUtility.ToJson(levelDefinition);

@@ -35,12 +35,12 @@ namespace Lirp
 
 		public void DrawDebug()
 		{
-			Debug.DrawLine(Start, End, Color.magenta);
+			//Debug.DrawLine(Start, End, Color.magenta);
 			Vector3 mid = (End - Start) * 0.5f + Start;
-			Debug.DrawLine(mid, mid + Normal1, Color.cyan);
+			//Debug.DrawLine(mid, mid + Normal1, Color.cyan);
 			Debug.DrawLine(mid, mid + Dir1, Color.cyan);
 
-			Debug.DrawLine(mid, mid + Normal2, Color.magenta);
+			//Debug.DrawLine(mid, mid + Normal2, Color.magenta);
 			Debug.DrawLine(mid, mid + Dir2, Color.magenta);
 		}
 

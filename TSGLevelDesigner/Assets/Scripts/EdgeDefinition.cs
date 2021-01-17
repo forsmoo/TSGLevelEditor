@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -9,6 +10,7 @@ public class EdgeDefinition : MonoBehaviour
     public Color Color = Color.black;
     public Lirp.MaterialEnum MaterialType;
     public Lirp.Edge edge;
+	public float SearchOffsetZ = 0.1f;
     public void UpdateDefinition()
     {
         if (Nodes == null)
@@ -25,9 +27,8 @@ public class EdgeDefinition : MonoBehaviour
 
             Nodes[Nodes.Count-1].rotation = Quaternion.LookRotation(Nodes[Nodes.Count - 2].forward, Nodes[Nodes.Count - 1].up);
             edge = new Lirp.Edge();
-            edge.Setup(Nodes[0].position, Nodes[1].position, Nodes[0].up, Nodes[1].up);
-			UpdateDebugInfo();
-
+            //edge.Setup(Nodes[0].position, Nodes[1].position, Nodes[0].up, Nodes[1].up);
+			UpdateEdge();
 		}
         else
         {
@@ -36,7 +37,24 @@ public class EdgeDefinition : MonoBehaviour
         
     }
 
-	public void UpdateDebugInfo()
+    public void Initialize()
+    {
+		var start = new GameObject("Start");
+		var end = new GameObject("End");
+		start.transform.SetParent(this.transform);
+		end.transform.SetParent(this.transform);
+		ResetTransform(start.transform);
+		ResetTransform(end.transform);
+		Nodes.Add(start.transform);
+		Nodes.Add(end.transform);
+	}
+
+	void ResetTransform(Transform t)
+    {
+		t.localPosition = Vector3.zero;
+		t.localRotation = Quaternion.identity;
+	}
+    public bool UpdateEdge()
 	{
 		var ManualStart = Nodes[0];
 		var ManualEnd = Nodes[1];
@@ -45,22 +63,39 @@ public class EdgeDefinition : MonoBehaviour
 		{
 			edge.Setup(ManualStart.position, ManualEnd.position, ManualStart.up, ManualEnd.up);
 			
-			ManualEnd.parent = null;
-			ManualStart.parent = null;
-			ManualStart.LookAt(ManualEnd.position);
-			ManualEnd.LookAt(ManualEnd.position + (edge.RimDir));
+			ManualEnd.SetParent(null);
+			ManualStart.SetParent(null);
+			ManualStart.LookAt(ManualEnd.position,ManualStart.up);
+			ManualEnd.LookAt(ManualEnd.position + (edge.RimDir),ManualEnd.up);
+
+			Vector3 N1=Vector3.up;
+			Vector3 N2=Vector3.up;
 			RaycastHit hit;
-			Vector3 ro = ManualStart.position + edge.Normal1 - edge.Dir1 * 0.2f;
-			ro += edge.RimDir * 0.1f;
+			Vector3 ro = ManualStart.position + edge.Normal1 + edge.Dir1 * (SearchOffsetZ*2);
+			ro += edge.RimDir * SearchOffsetZ;
 			if (Physics.Raycast(ro, -edge.Normal1, out hit, 2))
 			{
-				ManualStart.rotation = Quaternion.FromToRotation(ManualStart.up, hit.normal) * ManualStart.rotation;
+				N1 = hit.normal;
 			}
-			ro = ManualEnd.position + edge.Normal2 - edge.Dir2 * 0.2f;
-			ro -= edge.RimDir * 0.1f;
+			else
+            {
+				Debug.LogError("No collider found start");
+				ManualStart.parent = transform;
+				ManualEnd.parent = transform;
+				return false;
+			}
+			ro = ManualEnd.position + edge.Normal2 + edge.Dir2 * (SearchOffsetZ*2);
+			ro -= edge.RimDir * SearchOffsetZ;
 			if (Physics.Raycast(ro, -edge.Normal2, out hit, 2))
 			{
-				ManualEnd.rotation = Quaternion.FromToRotation(ManualEnd.up, hit.normal) * ManualEnd.rotation;
+				N2 = hit.normal;
+			}
+			else
+			{
+				Debug.LogError("No collider found end");
+				ManualStart.parent = transform;
+				ManualEnd.parent = transform;
+				return false;
 			}
 			transform.position = ManualStart.position + (ManualEnd.position - ManualStart.position) * 0.5f;
 			transform.LookAt(ManualEnd);
@@ -68,27 +103,11 @@ public class EdgeDefinition : MonoBehaviour
 			ManualStart.parent = transform;
 			ManualEnd.parent = transform;
 
-
-			BoxCollider bc = GetComponent<Collider>() as BoxCollider;
+			edge.Setup(ManualStart.position, ManualEnd.position, N1, N2);
 			
-			if (bc == null)
-				bc = gameObject.AddComponent<BoxCollider>();
-			Bounds b = new Bounds(ManualStart.position, Vector3.zero);
-			b.Encapsulate(ManualEnd.position);
-			bc.isTrigger = true;
-			bc.center = Vector3.zero;
-			bc.size = new Vector3(0.5f, 0.5f, edge.Length);
-
-			edge.Setup(ManualStart.position, ManualEnd.position, ManualStart.up, ManualEnd.up);
-			/*if (edgeDefinition == null)
-				edgeDefinition = new EdgeDefinition();
-			edgeDefinition.Start = edge.Start;
-			edgeDefinition.End = edge.End;
-			edgeDefinition.Direction = edge.Dir1;
-			edgeDefinition.Direction2 = edge.Dir2;
-			edgeDefinition.Normal1 = edge.Normal1;
-			edgeDefinition.Normal2 = edge.Normal2;*/
+			return true;
 		}
+		return false;
 	}
 
 	private void OnDrawGizmos()
@@ -100,7 +119,7 @@ public class EdgeDefinition : MonoBehaviour
 				edge.DrawDebug();
             }
 
-            if (Nodes.Count > 1)
+            if (Nodes.Count == 2 && Nodes[0] != null  && Nodes[1]!=null)
             {
                 var previousColor = Gizmos.color;
                 Gizmos.color = Color;
@@ -111,4 +130,5 @@ public class EdgeDefinition : MonoBehaviour
         }
     }
 }
+
 

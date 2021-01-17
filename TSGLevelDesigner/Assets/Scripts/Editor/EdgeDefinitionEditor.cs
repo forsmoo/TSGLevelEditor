@@ -21,16 +21,31 @@ namespace Lirp
 		public override void OnInspectorGUI()
 		{
 			base.OnInspectorGUI();
-			GUILayout.Label("This will create a physics edge when in exported. This is used on half/quarter pipes in standard game, to get better board ground detections");
 
-			GUILayout.Label("Place each node with Z axis (blue) along the edge");
-			GUILayout.Label("Place each node with Y axis (greem) top surface");
-			GUILayout.Label("This will give a hint of how the edge is created. It will autodetect the edge when the game is started, so make sure these are placed properly or there might be funny physics bugs");
-
-			if (GUILayout.Button("Update view"))
+			if ((target as EdgeDefinition).Nodes.Count < 2)
 			{
-				Gizmos.color = Color.black;
-				(target as EdgeDefinition).UpdateDefinition();
+				if (GUILayout.Button("Initialize"))
+				{
+					(target as EdgeDefinition).Initialize();
+				}
+			}
+			else
+			{
+
+
+				GUILayout.Label("This will create a physics edge when in exported. This is used on half/quarter pipes in standard game, to get better ground detections");
+
+				GUILayout.Label("Place start node with Z axis (blue) along the edge and Y on the top surface");
+				GUILayout.Label("Place end node with Y axis (green) out from the second surface");
+				GUILayout.Label("Press update view to get the actual edge values");
+
+				GUILayout.Label("Tip: while placing a transform, hold [V] to snap to vertices");
+
+				if (GUILayout.Button("Update"))
+				{
+					Gizmos.color = Color.black;
+					(target as EdgeDefinition).UpdateDefinition();
+				}
 			}
 		}
 	}
