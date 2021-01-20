@@ -11,7 +11,7 @@ public class EdgeDefinition : MonoBehaviour
     public Lirp.MaterialEnum MaterialType;
     public Lirp.Edge edge;
 	public float SearchOffsetZ = 0.1f;
-    public void UpdateDefinition()
+    public bool UpdateDefinition()
     {
         if (Nodes == null)
             Nodes = new List<Transform>();
@@ -28,13 +28,13 @@ public class EdgeDefinition : MonoBehaviour
             Nodes[Nodes.Count-1].rotation = Quaternion.LookRotation(Nodes[Nodes.Count - 2].forward, Nodes[Nodes.Count - 1].up);
             edge = new Lirp.Edge();
             //edge.Setup(Nodes[0].position, Nodes[1].position, Nodes[0].up, Nodes[1].up);
-			UpdateEdge();
+			return UpdateEdge();
 		}
         else
         {
             Debug.LogError("Need two nodes");
         }
-        
+		return false;
     }
 
     public void Initialize()

@@ -251,7 +251,7 @@ namespace Lirp
                 var levelEdge = new LevelEdge();
                 levelEdge.edgeParts = new List<EdgeCompoennt>();
 
-                if( edge.UpdateEdge () )
+                if( edge.UpdateDefinition() )
                 {
                     EdgeCompoennt edgeComponent = new EdgeCompoennt();
                     edgeComponent.P1 = edge.edge.Start;
