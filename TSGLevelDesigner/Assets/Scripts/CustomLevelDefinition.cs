@@ -51,6 +51,9 @@ namespace Lirp
         public Vector3 Position;
         public Vector3 Direction;
         public float Velocity;
+        public string Caption;
+        public int SortOrder;
+        public bool IsVisible;
     }
 
     [System.Serializable()]

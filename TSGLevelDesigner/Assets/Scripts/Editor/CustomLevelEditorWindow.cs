@@ -16,7 +16,6 @@ using UnityGLTF;
 
 namespace Lirp
 {
-    
     public class CustomLevelEditorWindow
     {
         static CustomLevelSaver saver;
@@ -164,6 +163,20 @@ namespace Lirp
                 var newSpawn = new Spawn();
                 newSpawn.Direction = spawn.transform.forward;
                 newSpawn.Position = spawn.transform.position;
+                var spawnName = spawn.GetComponent<SpawnName>();
+                if (spawnName != null)
+                {
+                    newSpawn.Caption = spawnName.Caption;
+                    newSpawn.SortOrder = spawnName.SortOrder;
+                    newSpawn.IsVisible = spawnName.IsVisible;
+                }
+                else
+                {
+                    newSpawn.Caption = spawn.name;
+                    newSpawn.IsVisible = true;
+                    newSpawn.SortOrder = 10;
+                }
+
                 levelDefinition.Spawns.Add(newSpawn);
             }
 
